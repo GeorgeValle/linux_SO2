@@ -1,0 +1,108 @@
+
+
+
+.container{
+    display: grid;
+    gap: 5px;
+    min-height: 400px;
+
+    margin: 14px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "head head"
+    " main main"
+    " section article"
+    " footer footer";
+    }
+
+/* background */
+
+header{
+    grid-area: head;
+    background: linear-gradient(to left, #373b44, #4286f4);
+}
+section{
+    grid-area: section;
+}
+main{
+    grid-area: main;
+}
+article{
+    grid-area: article;
+}
+
+
+footer{
+    grid-area: footer;
+}
+
+
+.bg-red{
+    background-color: red;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-pink{
+    background-color: pink;
+}
+.bg-blue{
+    background-color: blue;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav .btn:hover {
+    background-color: #333;
+}
+
+/* End Navbar */
+
+
+/* responsive */
+
+
+@media (max-width: 768px){
+    .container{
+        grid-template-columns: ifr;
+        grid-template-rows: 10% 30% 38% 10%;
+        grid-template-areas:
+        "head"
+        "main"
+        "section"
+        "article"
+        "footer";
+    }
+}
