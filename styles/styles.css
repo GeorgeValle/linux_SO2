@@ -51,41 +51,63 @@ footer{
     background-color: blue;
 }
 
-/* Navbar */
-nav {
-    background-color: #333;
-    padding: 10px;
+/* ****** Navbar ****** */
+.navbar{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navbar a{
+	text-decoration: none;
+	color: inherit;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 10px;
+.logo{
+	margin-right: 50px;
+    
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+.logo-image{
+    width: 38px;
 }
 
-nav a:hover {
-    color: #000;
+.list{
+	list-style:none;
+	display:flex;
+	gap:25px;
 }
 
-nav .btn {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
+#toggler,
+.navbar label{
+	display:none;
 }
 
-nav .btn:hover {
-    background-color: #333;
+@media screen and (max-width:600px){
+.menu{
+	width:100%;
+	max-height:0;
+	overflow: hidden;
+}
+
+.list{
+	flex-direction:column;
+	align-items:center;
+	padding:20px;
+}
+
+.navbar label{
+	display:inline-flex;
+	align-items:center;
+	cursor:pointer;
+}
+
+#toggler:checked ~ .menu{
+	max-height:100%;
+}
 }
 
 /* End Navbar */
@@ -96,9 +118,10 @@ nav .btn:hover {
 
 @media (max-width: 768px){
     .container{
-        grid-template-columns: ifr;
+        grid-template-columns: 1fr;
         grid-template-rows: 10% 30% 38% 10%;
         grid-template-areas:
+        "head"
         "head"
         "main"
         "section"
