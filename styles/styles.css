@@ -149,15 +149,43 @@ section p{
     margin-right: 25px;
 }
 
-
-
+.youtube-wrapper{
+    width: 60%;
+    margin: auto;
+}
 
 .youtube{
+    height: 0px;
+    padding-bottom : 56.25%;
+    position: relative;
+}
+
+.youtube iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* ***** images ****** */
+.img-content{
+    max-width:100%
+}
+
+.caption{
+    color: #ffff;
+    margin-left:25px;
+    margin-bottom: 15px;
+    scroll-padding-bottom: 15px;
+}
+
+/* .youtube{
     display:flex;
     align-items: center;
     flex-direction: column;
     padding: 30px;
-}
+} */
 
 .content-icons{
     margin-top:10px;
