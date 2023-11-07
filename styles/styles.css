@@ -136,6 +136,8 @@ main p{
     margin-right: 25px;
 }
 
+
+
 section p{
     font-family: 'lato', sans-serif;
     color:#273a2d;
@@ -148,12 +150,25 @@ section p{
 }
 
 
+
+
 .youtube{
     display:flex;
     align-items: center;
     flex-direction: column;
     padding: 30px;
 }
+
+.content-icons{
+    margin-top:10px;
+    font-size: 3rem;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
 
 /* End Content */
 
