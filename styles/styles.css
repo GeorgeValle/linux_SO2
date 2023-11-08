@@ -136,7 +136,14 @@ main p{
     margin-right: 25px;
 }
 
-
+main ol li{
+    list-style-type: decimal;
+    font-family: 'lato', sans-serif;
+    color:#ffff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.75em;
+}
 
 section p{
     font-family: 'lato', sans-serif;
@@ -148,6 +155,21 @@ section p{
     margin-left: 25px;
     margin-right: 25px;
 }
+
+section ul li {
+    list-style-type: disc;
+    font-family: 'lato', sans-serif;
+    color:#273a2d;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.75em;
+}
+
+section h2, h3{
+    font-family: 'lato', sans-serif;
+    color:#273a2d;
+}
+
 
 .youtube-wrapper{
     width: 60%;
