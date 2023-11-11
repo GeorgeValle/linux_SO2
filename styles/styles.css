@@ -234,7 +234,8 @@ article h2{
 
 /* ***** images ****** */
 .img-content{
-    max-width:100%
+    max-width:100%;
+    width: 150px;
 }
 
 .caption{
@@ -281,6 +282,7 @@ article h2{
 	display:inline-flex;
 	align-items:center;
 	cursor:pointer;
+    font-size: 3.5rem;
 }
 
 #toggler:checked ~ .menu{
